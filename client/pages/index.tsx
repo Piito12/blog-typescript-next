@@ -12,7 +12,8 @@ import About from "./about";
 import Podcast from "./podcast";
 
 interface IProps {
-  setDisplay: Dispatch<SetStateAction<string>>;
+  // setDisplay: Dispatch<SetStateAction<string>>;
+  display: string;
 }
 
 const Home: FC<IProps> = () => {
@@ -26,10 +27,10 @@ const Home: FC<IProps> = () => {
           <Blog />
         ) : display === "about" ? (
           <>
-            <About />
+            <About setDisplay={setDisplay} />
           </>
         ) : display === "podcast" ? (
-          <Podcast />
+          <Podcast display= {display} />
         ) : display === "contact" ? (
           <Contact setDisplay={setDisplay} />
         ) : null}

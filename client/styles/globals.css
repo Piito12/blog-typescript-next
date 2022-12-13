@@ -215,3 +215,54 @@ body {
   padding: 100px 300px;
   border-radius: 20px;
 }
+
+.abount-me{
+  display: flex;
+  flex-direction: column;
+  background-color: coral;
+  padding: 40px;
+  border-radius: 30px;
+  color: azure;
+  font-size: 20px;
+}
+
+.left-sections{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: transparent;
+  padding: 20px;
+}
+
+.about-me-header{
+  font-size: 30px;
+  margin: 20px;
+}
+
+.left-sections button{
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 999px;
+  padding: 20px;
+}
+.left-sections button:hover{
+  color: white;
+  background-color: antiquewhite;
+}
+.wrapper-img img{
+  margin: 10px;
+  border-radius: 30px;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.wrapper-img img:hover{
+  filter: brightness(1.1);
+  scale: 1.2;
+  box-shadow: #000;
+}

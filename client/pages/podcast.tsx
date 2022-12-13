@@ -1,11 +1,15 @@
 import React ,{FC} from 'react'
 
-const podcast:FC  = () => {
+interface podcastProps {
+    display : string;
+}
+
+const podcast:FC<podcastProps>= ({display}) => {
   return (
     <div>
-        <div>This is podcast</div>
+        <div>This is {display}</div>
     </div>
   )
 }
 
-export default podcast
+export default podcast;
